@@ -1,0 +1,11 @@
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+spring:
+  application:
+    name: service-registry
+  cloud:
+    fail-fast: true
+  config:
+    import: configserver:http://localhost:8888

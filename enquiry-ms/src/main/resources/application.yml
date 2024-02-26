@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: stock-inventory-ms
+  cloud:
+    fail-fast: true
+  config:
+    import: configserver:http://localhost:8888

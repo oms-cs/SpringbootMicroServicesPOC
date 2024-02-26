@@ -1,8 +1,8 @@
-com:
-  poc:
-    stock:
-      kafka:
-        topic-name: order-placed
+#com:
+#  poc:
+#    stock:
+#      kafka:
+#        topic-name: order-placed
 eureka:
   client:
     serviceUrl:
@@ -11,9 +11,9 @@ eureka:
     hostname: localhost
 server:
   port: 8081
-spring:
-  kafka:
-    producer:
-      bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer

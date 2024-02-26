@@ -22,8 +22,8 @@ public class ExchangeController {
 	@Autowired
 	private EnquiryClient enquiryClient;
 	
-	@Autowired
-	private KafkaProducer kafkaProducer;
+//	@Autowired
+	//private KafkaProducer kafkaProducer;
 	
 	@GetMapping("/order/{stockId}")
 	public String placeOrder(@PathVariable int stockId) {
@@ -32,7 +32,7 @@ public class ExchangeController {
 		Stock result = enquiryClient.enquiryStock(stockId);
 		String output = "Order Placed for stock : "+result.getStockName();
 		LOGGER.info(output);
-		kafkaProducer.sendOrderPlacedNotification(result);
+		//kafkaProducer.sendOrderPlacedNotification(result);
 		return output;
 	}
 
